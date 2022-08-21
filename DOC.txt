@@ -32,3 +32,12 @@ JSX vs. HTML
     Because 'class' is a reserved keyword of Javascript
 
 export default App // This means export the component and eneble to use where it is imported.
+
+======================================================================================
+** DYNAMIC VALUES IN TEMPLATE **
+
+define variables inside the function before the return statement;
+
+in the return JSX , add {} and put the variable name inside them.
+
+can define strings and numbers , But cannot add boolean variables or objects like this.
