@@ -3,3 +3,9 @@ npx create-react-app app-name
 cd app-name
 
 code .
+
+file structure
+    -- node_modules => all node dependencies
+    -- public => all public file , public to the browser
+    -- src => all our react code goes here
+        -- index.js => get all reat components , mounting them to the DOM
