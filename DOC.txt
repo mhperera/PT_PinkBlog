@@ -4,6 +4,8 @@ cd app-name
 
 code .
 
+npm run start
+
 file structure
     -- node_modules => all node dependencies
     -- public => all public file , public to the browser
