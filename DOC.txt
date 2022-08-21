@@ -11,3 +11,24 @@ file structure
     -- public => all public file , public to the browser
     -- src => all our react code goes here
         -- index.js => get all reat components , mounting them to the DOM
+
+======================================================================================
+** COMPONENTS **
+
+Self contained section of content
+
+components contains of  
+    - Template
+    - Logic
+
+html codes inside the component js file=>funtion=>return section is called JSX. Not really the HTML.
+
+babel converts all JSX components into HTML and render that HTML in the DOM
+
+JSX vs. HTML    
+    - In HTML   <div class='test-class'></div>
+    - In JSX    <div className='test-class'></div> 
+    
+    Because 'class' is a reserved keyword of Javascript
+
+export default App // This means export the component and eneble to use where it is imported.
