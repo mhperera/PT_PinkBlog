@@ -108,3 +108,4 @@ Import stylesheets to the component.
         runs the useEffect hook in certain renders only. (not in every single render)
         eg :-
             [] => runs only in initial render
+            [stateName] => runs When stateName is changed
