@@ -41,3 +41,19 @@ define variables inside the function before the return statement;
 in the return JSX , add {} and put the variable name inside them.
 
 can define strings and numbers , But cannot add boolean variables or objects like this.
+
+======================================================================================
+** MULTIPLE COMPONENTS **
+
+-- Put other component inside the root component 
+    eg : If App.js component is the root component ,  add navbar.js, blogdetails.js, Sidebar.js components inside the App.js component
+
+Create a new file.
+Type sfc (Stateless functional component) the EMMET Command and hit enter
+Enter Component Name (Start with a Capital letter)
+Put JSX inside the return;
+Check export line.
+Import the created component is another component
+Place it inside the JSX 
+    -- <ComponentName />                Self Closing Tag
+    -- <ComponentName></ComponentName>
