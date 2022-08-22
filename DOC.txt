@@ -57,3 +57,15 @@ Import the created component is another component
 Place it inside the JSX 
     -- <ComponentName />                Self Closing Tag
     -- <ComponentName></ComponentName>
+
+======================================================================================
+** STYLING COMPONENTS (CSS) **
+
+Import stylesheets to the component.
+-- Those styles will not only styles that paticular component, but all components rendered into the browser
+
+-- index.css => Globle stylesheet (Add all css here if it is a small project)
+
+{{}} 
+    -- outter braces => dynamic variable braces
+    -- inner braces => object braces
