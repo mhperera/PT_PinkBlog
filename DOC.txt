@@ -88,7 +88,18 @@ Import stylesheets to the component.
 
 -- useState hook
     gives us to make a reactive value and let us change the value whenever we want
-
     eg : -
         -- const [varName, setvarName] = useState('VarValue'); // initialize reactive variable using useState hook
         -- setvarName('ChangedVarValue'); // chnage the value of reactive variable using useState hook `set` function
+
+-- useEffect hook
+    runs this hook in every render of the component.
+    put this before anywhere the return statement.
+    doesn't return anything
+
+    components render in 2 ways
+        -- when the page loads initially
+        -- when the state change
+    usage
+        -- to fetch data
+        -- to communicate with authentication service
