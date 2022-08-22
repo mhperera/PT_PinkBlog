@@ -22,17 +22,22 @@ const Home = () => {
             body : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries...',
             author: 'S Mario'
         }
-    ])
+    ]);
+
+    const handleDelete = (id) => {
+        const newBlogs = blogs.filter( blog =>  blog.id != id );
+        setBlogs(newBlogs);
+    }
 
     return (
 
         <div className="home">
             
-            <BlogList blogs={ blogs } title='All Blogs'/>
+            <BlogList blogs={ blogs } title='All Blogs' handleDelete={ handleDelete }/>
 
             <br />
                 
-            <BlogList blogs={ blogs.filter((blog) => ( blog.author === 'S Mario' ) ) } title='Marios Blogs'/>
+            {/* <BlogList blogs={ blogs.filter((blog) => ( blog.author === 'S Mario' ) ) } title='Marios Blogs' handleDelete={ handleDelete }/> */}
 
         </div>
 
