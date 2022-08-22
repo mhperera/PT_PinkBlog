@@ -10,7 +10,7 @@ const Navbar = () => {
                 {/* =============== INLINE CSS ===============  */}
                 {/* <a href="/create" style={{
                     color:"white",
-                    backgroundColor:"#f1356d",
+                    backgroundColor:"{}",
                     borderRadius: "8px",
                     padding: "8px 15px"
                 }}>New Blog</a> */}

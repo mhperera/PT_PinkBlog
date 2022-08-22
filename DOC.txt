@@ -97,9 +97,14 @@ Import stylesheets to the component.
     put this before anywhere the return statement.
     doesn't return anything
 
-    components render in 2 ways
+    Components render in 2 ways
         -- when the page loads initially
         -- when the state change
-    usage
+    Usage
         -- to fetch data
         -- to communicate with authentication service
+
+    ** Dependency Array
+        runs the useEffect hook in certain renders only. (not in every single render)
+        eg :-
+            [] => runs only in initial render
