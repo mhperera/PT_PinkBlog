@@ -69,3 +69,13 @@ Import stylesheets to the component.
 {{}} 
     -- outter braces => dynamic variable braces
     -- inner braces => object braces
+
+======================================================================================
+** CLICK EVENTS **
+
+-- onClick={ handleClick } => Reference the function assigened to a variable handleClick
+-- onClick={ (e) => {handleClickAgain(name,e);} } => Function Revoke to another function to pass parameters
+
+-- DONT DO THIS
+    -- onClick={ handleClick(name) } => 
+    -- This is revoking a function. This function will execute when the page is loaded and button click event. 
