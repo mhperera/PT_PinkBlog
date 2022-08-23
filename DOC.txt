@@ -159,3 +159,8 @@ const { data:blogs, isPending, error } = useFetch('http://localhost:8000/blogs')
 ** REACT ROUTER **
 
 npm install react-router-dom@5
+
+====================================================================================== 
+** ROUTE PARAMETER **
+
+Variable passed with the route
