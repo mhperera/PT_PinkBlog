@@ -34,6 +34,13 @@ JSX vs. HTML
 export default App // This means export the component and eneble to use where it is imported.
 
 ======================================================================================
+** ARROW FUNCTION **
+
+const funcName = ()=>{
+    .. code here ..
+}
+
+======================================================================================
 ** DYNAMIC VALUES IN TEMPLATE **
 
 define variables inside the function before the return statement;
@@ -135,3 +142,14 @@ only the Logic1 is true it goes to chck the Logic2 output to the browser
 
 .then().catch()
     // catch() fetches any network error and triggers a function
+
+====================================================================================== 
+** CUSTOM HOOKS **
+
+the file and the function names need to start with use  
+    eg :-
+        useFetch.js  
+            const useFetch = () =>{code here}
+
+const { data:blogs, isPending, error } = useFetch('http://localhost:8000/blogs');
+    grab the data and call it blogs (rename)
