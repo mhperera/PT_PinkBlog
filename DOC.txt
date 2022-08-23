@@ -121,4 +121,11 @@ npx json-server --watch data/db.json --port 8000
     /blogs/{id}         get         Fetch a single blog
     /blogs              post        Add a new blog
     /blogs              get         Fetch all blogs
-    /blogs/{id}         Delete      Delete a blog   
+    /blogs/{id}         Delete      Delete a blog  
+
+====================================================================================== 
+** CONDITIONAL TEMPLATE **
+
+{Logic1 && Logic2}
+
+only the Logic1 is true it goes to chck the Logic2 output to the browser
