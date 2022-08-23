@@ -6,12 +6,20 @@ const Create = () => {
     const [ body, setBody ] = useState('');
     const [ author, setAuthor ] = useState('S Mario');
 
+    const handleSubmit = (e) => {
+
+        e.preventDefault(); // prevent the page being refreshing
+        const blog = { title, body, author };
+        
+
+    }
+
     return ( 
         <div className="create">
-            
+
             <h2>Add a New Blog</h2>
 
-            <form>
+            <form onSubmit = { handleSubmit }>
 
                 <label>Blog Title : </label>
                 <input 
@@ -42,9 +50,9 @@ const Create = () => {
 
                 <button>Add Blog</button>
 
-                <p>{ title }</p>
-                <p>{ body }</p>
-                <p>{ author }</p>
+                {/* <p>{ title }</p> */}
+                {/* <p>{ body }</p> */}
+                {/* <p>{ author }</p> */}
 
             </form>
 
