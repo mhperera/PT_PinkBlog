@@ -9,7 +9,7 @@ const useFetch = (url) => {
 
     useEffect(() => {
         
-        setTimeout(()=>{
+        // setTimeout(()=>{
 
             fetch(url) // promise
 
@@ -35,7 +35,7 @@ const useFetch = (url) => {
                 setError(err.message);
             })
 
-        },1000)
+        // },1000)
 
     }, [url]);
 
