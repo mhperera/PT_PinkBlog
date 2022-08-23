@@ -76,6 +76,20 @@
 	text-align: justify;
 }
 
+.blog-details button {
+	background: var(--main_color);
+	color: #fff;
+	border: 0;
+	padding: 8px;
+	border-radius: 8px;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+.blog-details{
+	text-align: center;
+}
+
 /* CREATE FORM STYLES */
 
 .create{
