@@ -129,3 +129,9 @@ npx json-server --watch data/db.json --port 8000
 {Logic1 && Logic2}
 
 only the Logic1 is true it goes to chck the Logic2 output to the browser
+
+====================================================================================== 
+** ERROR HANDLE **
+
+.then().catch()
+    // catch() fetches any network error and triggers a function
