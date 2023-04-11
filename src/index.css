@@ -128,3 +128,11 @@
 	border-radius: 8px;
 	cursor: pointer;
 }
+
+/* PAGE NOT FOUND 404 STYLES */
+
+.page-not-found *{
+	display: block;
+	text-align: center;
+	margin: 10px 0;
+}
