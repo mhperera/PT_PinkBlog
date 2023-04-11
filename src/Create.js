@@ -14,7 +14,7 @@ const Create = () => {
         e.preventDefault(); // prevent the page being refreshing
         const blog = { title, body, author };
         setIsPending(true);
-        fetch('http://localhost:8000/blogs',{
+        fetch('https://6435c402537112453fdf0bf0.mockapi.io/api/v1/blogs',{
             method : 'POST',
             headers : { 'Content-Type':'application/json' },
             body : JSON.stringify(blog)
@@ -27,11 +27,11 @@ const Create = () => {
             history.push('/'); // redirect to a specific url
         })
 
-        
- 
+
+
     }
 
-    return ( 
+    return (
         <div className="create">
 
             <h2>Add a New Blog</h2>
@@ -39,12 +39,12 @@ const Create = () => {
             <form onSubmit = { handleSubmit }>
 
                 <label>Blog Title : </label>
-                <input 
-                    type="text" 
+                <input
+                    type="text"
                     required
                     value={ title }
                     onChange = {(e)=>setTitle(e.target.value)}
-                /> 
+                />
 
                 <label>Blog Body : </label>
                 <textarea
@@ -77,5 +77,5 @@ const Create = () => {
         </div>
     );
 }
- 
+
 export default Create;

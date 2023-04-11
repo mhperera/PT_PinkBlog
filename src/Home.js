@@ -3,7 +3,7 @@ import useFetch from './useFetch';
 
 const Home = () => {
 
-    const { data:blogs, isPending, error } = useFetch('http://localhost:3001/blogs');
+    const { data:blogs, isPending, error } = useFetch('https://6435c402537112453fdf0bf0.mockapi.io/api/v1/blogs');
 
     return (
 

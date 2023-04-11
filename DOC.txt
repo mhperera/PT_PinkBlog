@@ -17,7 +17,7 @@ file structure
 
 Self contained section of content
 
-components contains of  
+components contains of
     - Template
     - Logic
 
@@ -25,10 +25,10 @@ html codes inside the component js file=>funtion=>return section is called JSX. 
 
 babel converts all JSX components into HTML and render that HTML in the DOM
 
-JSX vs. HTML    
+JSX vs. HTML
     - In HTML   <div class='test-class'></div>
-    - In JSX    <div className='test-class'></div> 
-    
+    - In JSX    <div className='test-class'></div>
+
     Because 'class' is a reserved keyword of Javascript
 
 export default App // This means export the component and eneble to use where it is imported.
@@ -52,7 +52,7 @@ can define strings and numbers , But cannot add boolean variables or objects lik
 ======================================================================================
 ** MULTIPLE COMPONENTS **
 
--- Put other component inside the root component 
+-- Put other component inside the root component
     eg : If App.js component is the root component ,  add navbar.js, blogdetails.js, Sidebar.js components inside the App.js component
 
 Create a new file.
@@ -61,7 +61,7 @@ Enter Component Name (Start with a Capital letter)
 Put JSX inside the return;
 Check export line.
 Import the created component is another component
-Place it inside the JSX 
+Place it inside the JSX
     -- <ComponentName />                Self Closing Tag
     -- <ComponentName></ComponentName>
 
@@ -73,7 +73,7 @@ Import stylesheets to the component.
 
 -- index.css => Globle stylesheet (Add all css here if it is a small project)
 
-{{}} 
+{{}}
     -- outter braces => dynamic variable braces
     -- inner braces => object braces
 
@@ -84,13 +84,13 @@ Import stylesheets to the component.
 -- onClick={ (e) => {handleClickAgain(name,e);} } => Function Revoke to another function to pass parameters
 
 -- DONT DO THIS
-    -- onClick={ handleClick(name) } => 
-    -- This is revoking a function. This function will execute when the page is loaded and button click event. 
+    -- onClick={ handleClick(name) } =>
+    -- This is revoking a function. This function will execute when the page is loaded and button click event.
 
 ======================================================================================
 ** STATES **
 
--- hook 
+-- hook
     starts with the word 'use'
 
 -- useState hook
@@ -128,39 +128,42 @@ npx json-server --watch data/db.json --port 8000
     /blogs/{id}         get         Fetch a single blog
     /blogs              post        Add a new blog
     /blogs              get         Fetch all blogs
-    /blogs/{id}         Delete      Delete a blog  
+    /blogs/{id}         Delete      Delete a blog
 
-====================================================================================== 
+======================================================================================
 ** CONDITIONAL TEMPLATE **
 
 {Logic1 && Logic2}
 
 only the Logic1 is true it goes to chck the Logic2 output to the browser
 
-====================================================================================== 
+======================================================================================
 ** ERROR HANDLE **
 
 .then().catch()
     // catch() fetches any network error and triggers a function
 
-====================================================================================== 
+======================================================================================
 ** CUSTOM HOOKS **
 
-the file and the function names need to start with use  
+the file and the function names need to start with use
     eg :-
-        useFetch.js  
+        useFetch.js
             const useFetch = () =>{code here}
 
 const { data:blogs, isPending, error } = useFetch('http://localhost:8000/blogs');
     grab the data and call it blogs (rename)
 
 
-====================================================================================== 
+======================================================================================
 ** REACT ROUTER **
 
 npm install react-router-dom@5
 
-====================================================================================== 
+======================================================================================
 ** ROUTE PARAMETER **
 
 Variable passed with the route
+
+======================================================================================
+** USE MOCKUP API instead ong db.json
