@@ -3,7 +3,7 @@ import useFetch from './useFetch';
 
 const Home = () => {
 
-    const { data:blogs, isPending, error } = useFetch('http://localhost:8000/blogs');
+    const { data:blogs, isPending, error } = useFetch('http://localhost:3001/blogs');
 
     return (
 
@@ -22,5 +22,5 @@ const Home = () => {
     );
 
 }
- 
+
 export default Home;

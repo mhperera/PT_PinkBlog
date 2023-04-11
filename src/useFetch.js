@@ -2,12 +2,12 @@ import { useState, useEffect } from 'react';
 
 // CUSTOM HOOK
 const useFetch = (url) => {
-    
+
     const [data, setData] = useState(null);
 
     const [isPending, setIsPending] = useState(true);
 
-    const [error, setError] = useState(null); 
+    const [error, setError] = useState(null);
 
     useEffect(() => {
 
@@ -23,7 +23,7 @@ const useFetch = (url) => {
                 if(!res.ok){
 
                     throw Error('Could not fetch data for that resource.');
-                    
+
                 }
 
                 return res.json();
@@ -41,7 +41,7 @@ const useFetch = (url) => {
 
             // CHECK FOR THE NETWORK ERROR (To check this abort json server)
             .catch((err)=>{
-                
+
                 if(err.name === 'AbortError'){
 
                     console.log('aborted');
@@ -52,7 +52,7 @@ const useFetch = (url) => {
                     setError(err.message);
 
                 }
-                
+
             })
 
         },1000)
